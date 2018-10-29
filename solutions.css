@@ -1,0 +1,94 @@
+.ex-1-square:hover {
+  background-color: red;
+}
+
+.ex-2-square:active {
+  width: 100px;
+  animation-name: enlarge;
+}
+
+@keyframes enlarge {
+  100% {
+    width: 1100px;
+  }
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+.ex-4-square:hover {
+  background: none;
+}
+
+.ex-5-square:hover {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+}
+
+.ex-5-square:active {
+  /* width: 30px;
+  height: 30px;
+  margin: 35px; */
+  animation-name: resize;
+  animation-duration: 2s;
+}
+
+@keyframes resize {
+  100% {
+    width: 30px;
+    height: 30px;
+    margin: 35px;
+  }
+}
+
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+.ex-7-img {
+  transition: 2s;
+}
+.ex-7-img:hover {
+  filter: sepia(50%) hue-rotate(25deg);
+}
+
+.ex-8-img {
+  transition: 3s;
+}
+.ex-8-img:hover {
+  filter: hue-rotate(80deg) blur(3px);
+  border-radius: 5%;
+}
+
+.ex-9-img {
+  transition: 2s;
+}
+
+.ex-9-img:hover {
+  filter: invert(80%) contrast(150%);
+  border-radius: 5%;
+  width: 600px;
+  margin: 0;
+}
+
+@keyframes giragira {
+  0% {
+    transform: rotate(90deg)
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+}
+
+.ex-11-icon:hover {
+  animation-name: giragira;
+  animation-duration: 10s;
+}
